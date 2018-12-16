@@ -1,0 +1,19 @@
+{
+  "name": "MinorityWars",
+  "version": "1.0.0",
+  "license": "license",
+  "scripts": {
+    "postinstall": "touch secret.js",
+    "compile": "dexon-truffle compile --all",
+    "develop": "dexon-truffle develop",
+    "dx-deploy": "dexon-truffle migrate --reset --network dexonnet",
+    "dx-console": "dexon-truffle console --network dexonnet",
+    "test": "dexon-truffle test",
+    "truffle": "dexon-truffle"
+  },
+  "dependencies": {
+    "@dexon-foundation/truffle": "^4.1.16",
+    "truffle-hdwallet-provider": "github:trufflesuite/truffle-hdwallet-provider",
+    "web3": "^1.0.0-beta.37"
+  }
+}
